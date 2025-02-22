@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-t96&kj+$n72)c377fmvwfx4hu1-m#%e^+cuzyk71flr*2ibk%j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['researh-project.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -52,6 +52,25 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+LOGGING = {
+   'version': 1,
+   'disable_existing_loggers': False,
+   'handlers': {
+      'file': {
+         'level': 'DEBUG',
+         'class': 'logging.FileHandler',
+         'filename': '/tmp/debug.log',
+      },
+   },
+   'loggers': {
+      'django': {
+         'handlers': ['file'],
+         'level': 'DEBUG',
+         'propagate': True,
+      },
+   },
+}
 
 ROOT_URLCONF = 'equations.urls'
 
@@ -118,28 +137,19 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
-USE_L1ON = True
-USE_TZ = True
 
-STATIC_URL = 'static/'
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-STORAGES = {
-    'staticfiles': {
-    'BACKEND': 'whitenoise.storage.CompressedManifestStaticFilesStorage',
-    },
-}
+STATIC_URL = 'static/'  
+STATIC_ROOT = os.path.join(BASE_DIR, 'main/static/')
+STATICFILES_DIRS = [
+]
 
 INTERNAL_IPS = [
     '127.0.0.1',
 ]
 
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
-    "/var/www/static/",
-]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
