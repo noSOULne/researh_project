@@ -1,0 +1,42 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}с неизвестно{% endblock %}
+
+{% block content %}
+    <h1>с неизвестно</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="equation">
+            <span class="a">
+                <select name="" class="selector" id="first">
+                    <option selected>
+                    </option>
+                    <option>
+                        -
+                    </option>
+                </select>
+                <input id="a" value="1">
+                <label for="a">x<sup>2</sup></label>
+            </span>
+            <span class="b">
+                <select name="" class="selector" id="second">
+                    <option selected>
+                        +
+                    </option>
+                    <option>
+                        -
+                    </option>
+                </select>
+                <input id="b" value="1">
+                <label for="b">x</label>=0
+            </span>
+        </div>
+        <span id="solution">
+        </span>
+        <div id="answer"></div>
+        <div id="button">Готово</div>
+    </form>
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <script src="{% static 'js/c.js' %}"></script>
+{% endblock %}
