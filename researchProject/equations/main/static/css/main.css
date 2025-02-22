@@ -1,0 +1,308 @@
+body {
+    background-image: url("https://fotoblik.ru/wp-content/uploads/2023/09/fon-geometriia-53.webp");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 5px;
+    margin: 0px;
+    
+}
+
+header {
+    margin: 0 auto;
+    text-align: center;
+    width: 96vw;
+    background: linear-gradient(to right,rgba(255, 166, 0, 0.699), rgba(0, 255, 255, 0.699));
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 25px;
+}
+
+header span {
+    display: inline-flex;
+    font: 7vh 'Didot', serif;
+    height: 7vh;
+    width: auto;
+    padding:4px;
+    color: black;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    justify-content: center;
+    background-color: aliceblue;
+    margin: 2px 15px;
+}
+
+header span:hover {
+    border-radius: 10px;
+}
+
+header .home span:hover::after {
+    content: '';
+    position: absolute;
+    top: calc(7vh + 8px + 10px + 2px + 10px + 5px);
+    border-top: 2.7vw solid aliceblue;
+    border-left: calc(5.5vw + 12px) solid transparent;
+    border-right: calc(5.5vw + 10px) solid transparent;
+    z-index: 3;
+}
+
+header .home span:hover::before {
+    content: '';
+    position: absolute;
+    top: calc(7vh + 8px + 11px + 4px + 18px);
+    border-top: 2.9vw solid rgb(0, 0, 0);
+    border-left: calc(6vw + 11px) solid transparent;
+    border-right: calc(6vw + 9px)  solid transparent;
+}
+
+header .d span:hover::after {
+    content: '';
+    position: absolute;
+    top: calc(7vh + 8px + 10px + 2px + 10px + 5px);
+    border-top: 2.7vw solid aliceblue;
+    border-left: calc(5.5vw + 15px) solid transparent;
+    border-right: calc(5.5vw + 13px) solid transparent;
+    z-index: 3;
+}
+
+header .d span:hover::before {
+    content: '';
+    position: absolute;
+    top: calc(7vh + 8px + 11px + 4px + 18px);
+    border-top: 2.9vw solid rgb(0, 0, 0);
+    border-left: calc(6vw + 13px) solid transparent;
+    border-right: calc(6vw + 11px)  solid transparent;
+}
+
+header .kof span:hover::after {
+    content: '';
+    position: absolute;
+    top: calc(7vh + 8px + 10px + 2px + 10px + 5px);
+    border-top: 4vw solid aliceblue;
+    border-left: calc(20.5vw + 7px) solid transparent;
+    border-right: calc(20.5vw + 7px) solid transparent;
+    z-index: 3;
+}
+
+header .kof span:hover::before {
+    content: '';
+    position: absolute;
+    top: calc(7vh + 8px + 11px + 4px + 18px);
+    border-top: 4.2vw solid rgb(0, 0, 0);
+    border-left: calc(21vw + 5px) solid transparent;
+    border-right: calc(21vw + 4px)  solid transparent;
+}
+
+aside {
+    float: left;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    padding: 2px;
+    height: calc(80vh + 7px);
+    width: 17vw;
+    background-color: rgba(255, 136, 0, 0.699);
+    border: 7px solid rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+aside h1 {
+    display: block;
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.897);
+    font-family: 'Didot', serif;
+    font-size: 26px;
+    margin-top: 0px;
+    border-radius: 7px 7px 0px 0px;
+    margin-bottom: 0px;
+}
+
+aside ul {
+    display: block;
+    background-color: rgba(240, 248, 255, 0.897);
+    margin-top: 2px;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+aside h2 {
+    font-family: 'Didot', serif;
+    display: block;
+    background-color: rgba(240, 248, 255, 0.897);
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+
+aside ul a {
+    font-family: 'Didot', serif;
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    transition: all 0.3s ease-in;
+}
+
+aside ul li a:hover {
+    color: rgb(88, 88, 88);
+    text-decoration: underline;
+    margin: 2px;
+    transform: scale(1.05);
+}
+
+main {
+    display: flexbox;
+    width: 75vw;
+    min-height: 80vh;
+    height: auto;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 2px 5px 0px;
+    background: rgba(255, 255, 255, 0.836);
+    border: 10px solid ;
+    border-radius: 10px;
+    float: left;
+}
+
+main h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+main div {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+main sup {
+    position: relative;
+    top: -2px;
+    font-size: 20px;
+}
+
+main sub {
+    position: relative;
+    top: 25px;
+    font-size: 15px;
+}
+
+main .b {
+    margin-left: -8px;
+}
+
+main #a, #b, #c {
+    width: 50px;
+    position: relative;
+    top: -4px;
+    font-size: 23px;
+}
+
+main select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: 8px;
+    border: 2px solid black;
+    border-radius: 50%;
+    
+}
+
+main #button {
+    display: inline-block;
+    margin-top: 20px;
+    border: 3px solid black;
+    font-size: 20px;
+    transition: all 0.3s ease-in;
+}
+
+main #button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+
+#answer #kof {
+    margin-top: 7px;
+}
+
+#D {
+    margin-top: 10px;
+}
+
+main #solution {
+    display: flexbox;
+    width: auto;
+}
+
+main .after {
+    position: relative;
+    left: 5%;
+}
+
+main .after {
+    position: relative;
+    font-size: 40px;
+}
+
+main #solve {
+    display: flexbox;
+}
+
+main #solve div{
+    display: block;
+}
+
+main .rule {
+    display: inline-block;
+    border: 8px solid red;
+    border-radius: 8px;
+    height: auto;
+    margin: 3px;
+    padding: 0 0 3px 0;
+}
+
+main .rule sup {
+    top: 2px;
+}
+
+main .rule div sub {
+    top: 30px;
+}
+
+main .rule li sub {
+    
+    top: 0px;
+}
+
+main .rule h4 {
+    margin: 3px 0 3px 0;
+}
+
+main .rule ul {
+    margin-top: 0px;
+    list-style-type: none;
+}
+
+main #r1, #r2, #r3{
+    display: flexbox;
+    float: left;
+    position: relative;
+    left: 15%;
+}
+main #r1, #r2 {
+    margin: 5px;
+    width: 30%;
+}
+
+main #r2 {
+    margin-top: -150px;
+}
