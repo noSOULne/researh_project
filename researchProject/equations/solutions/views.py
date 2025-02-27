@@ -14,3 +14,6 @@ def c(request):
 
 def kof(request):
     return render(request, 'solutions/kof.html')
+
+def bc(request):
+    return render(request, 'solutions/bc.html')

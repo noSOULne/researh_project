@@ -1,5 +1,5 @@
 body {
-    background-image: url("https://fotoblik.ru/wp-content/uploads/2023/09/fon-geometriia-53.webp");
+    background-image: url("../img/fon.jpeg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -41,8 +41,8 @@ header .home span:hover::after {
     position: absolute;
     top: calc(7vh + 8px + 10px + 2px + 10px + 5px);
     border-top: 2.7vw solid aliceblue;
-    border-left: calc(5.5vw + 12px) solid transparent;
-    border-right: calc(5.5vw + 10px) solid transparent;
+    border-left: calc(7vw + 7px) solid transparent;
+    border-right: calc(7vw + 7px) solid transparent;
     z-index: 3;
 }
 
@@ -51,8 +51,8 @@ header .home span:hover::before {
     position: absolute;
     top: calc(7vh + 8px + 11px + 4px + 18px);
     border-top: 2.9vw solid rgb(0, 0, 0);
-    border-left: calc(6vw + 11px) solid transparent;
-    border-right: calc(6vw + 9px)  solid transparent;
+    border-left: calc(7vw + 11px) solid transparent;
+    border-right: calc(7vw + 9px)  solid transparent;
 }
 
 header .d span:hover::after {
@@ -262,47 +262,16 @@ main #solve div{
 }
 
 main .rule {
-    display: inline-block;
+    display: grid;
+    justify-self: center;
     border: 8px solid red;
     border-radius: 8px;
-    height: auto;
-    margin: 3px;
-    padding: 0 0 3px 0;
+    height: fit-content;
+    width: fit-content;
+    margin: 4px;
 }
 
-main .rule sup {
-    top: 2px;
+.rule div {
+    margin-top: 2px;
 }
 
-main .rule div sub {
-    top: 30px;
-}
-
-main .rule li sub {
-    
-    top: 0px;
-}
-
-main .rule h4 {
-    margin: 3px 0 3px 0;
-}
-
-main .rule ul {
-    margin-top: 0px;
-    list-style-type: none;
-}
-
-main #r1, #r2, #r3{
-    display: flexbox;
-    float: left;
-    position: relative;
-    left: 15%;
-}
-main #r1, #r2 {
-    margin: 5px;
-    width: 30%;
-}
-
-main #r2 {
-    margin-top: -150px;
-}

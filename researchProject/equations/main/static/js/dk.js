@@ -21,6 +21,7 @@ $('#button').click(function(ev) {
     $('#x').text('');
     $('#x1').text('');
     $('#x2').text('');
+    $('#solution').text('');
     $('#answer').text('');
     $('#D').html('D=b<sup>2</sup>-4ac')
     let a = document.getElementById('a').value;

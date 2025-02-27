@@ -52,10 +52,9 @@ $('#button').click(function(ev) {
         c *= -1;
     }
 
-    c *= -1;
     let answ = f(c, a);
     if(a != 1) {
-        $('#solution').html('<div>' + a + 'x<sup>2</sup> = ' + c);
+        $('#solution').html('<div>' + a + 'x<sup>2</sup> = ' + c + '</div>');
     }
     
     if(answ > 0)

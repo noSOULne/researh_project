@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <a class="home" href="{% url 'home' %}"><span>Главная</span></a>
+        <a class="home" href="{% url 'home' %}"><span>Формулы</span></a>
         <a class="d" href="{% url 'discriminant' %}"><span>Через D</span></a>
         <a class="kof" href="{% url 'kof' %}"><span>Через св-ва коэффициентов</span></a>
     </header>
@@ -25,6 +25,7 @@
         <ul>
             <li><a href="{% url 'b' %}">b отсутствует</a></li>
             <li><a href="{% url 'c' %}">с отсутствует</a></li>
+            <li><a href="{% url 'bc' %}">b и с отсутствует</a></li>
         </ul>
     </aside>
     <main>

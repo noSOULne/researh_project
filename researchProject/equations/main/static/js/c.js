@@ -32,7 +32,7 @@ $('#button').click(function(ev) {
     
     if(first == '-') {
         a *= -1;
-    }
+    }$('#answer').text('');
     let sing = '+';
     if(second == '-') {
         b *= -1;

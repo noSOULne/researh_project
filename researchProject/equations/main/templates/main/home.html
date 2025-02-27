@@ -1,31 +1,33 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}Главная страница{% endblock %}
+{% block title %}Формулы для решений квадратных уравнений{% endblock %}
 
 {% block content %}
-    <h1>Главная страница</h1>
+    <h1>Формулы для решений квадратных уравнений</h1> 
     <div class="rule" id="r1">
-        <h4>Решение через дискриминант</h4>
+        <div id="title">Стандартный вид квадратных уравнений:</div>
+        <div>ax<sup>2</sup>+bx+c=0</div>
+    </div>
+    <div class="rule" id="r2">
+        <div id="title">Решение через дискриминант:</div>
         <div>ax<sup>2</sup>+bx+c=0</div>
         <div>D=b<sup>2</sup>-4ac</div>
         <div>x<sub>1,2</sub>=(-b±√D)/2a</div>
-    </div>
-    <div class="rule" id="r3">
-        <h4>Свойства коэффициентов</h4>
-        <ul>
-            <li>Если a+b+c=0, то х<sub>1</sub>=1, х<sub>2</sub>=c/а</li>
-            <li>Если а+с=b, то х<sub>1</sub>=-1, х<sub>2</sub>=-с/а</li>
-            <li>Если b=a<sup>2</sup>+1, c=a, то x<sub>1</sub>=-a, x<sub>2</sub>=-1/a</li>
-            <li>Если b=-(a<sup>2</sup>+1), c=a, то x<sub>1</sub>=a, x<sub>2</sub>=1/a</li>
-            <li>Если b=a<sup>2</sup>-1, c=-a, то x<sub>1</sub>=-a, x<sub>2</sub>=1/a</li>
-            <li>Если b=-(a<sup>2</sup>-1), c=-a, то x<sub>1</sub>=a, x<sub>2</sub>=-1/a</li>
-        </ul>
-    </div>
-    <div class="rule" id="r2">
-        <h4>Решение через дискриминант(k)</h4>
+    </div> 
+     <div class="rule" id="r3">
+        <div id="title">Решение через дискриминант(k):</div>
         <div>ax<sup>2</sup>+bx+c=0</div>
         <div>k=b/2</div>
         <div>D=k<sup>2</sup>-ac</div>
         <div>x<sub>1,2</sub>=(-k±√D)/a</div>
-    </div>
+    </div> 
+    <div class="rule" id="r4">
+        <div id="title">Свойства коэффициентов:</div>
+        <div>Если a+b+c=0, то х<sub>1</sub>=1, х<sub>2</sub>=c/а</div>
+        <div>Если а+с=b, то х <sub>1</sub> =-1, х <sub>2</sub> =-с/а</div>
+        <div>Если b=a<sup>2</sup>+1, c=a, то x<sub>1</sub>=-a, x<sub>2</sub>=-1/a</div>
+        <div>Если b=-(a<sup>2</sup>+1), c=a, то x<sub>1</sub>=a, x<sub>2</sub>=1/a</div>
+        <div>Если b=a<sup>2</sup>-1, c=-a, то x<sub>1</sub>=-a, x<sub>2</sub>=1/a</div>
+        <div>Если b=-(a<sup>2</sup>-1), c=-a, то x<sub>1</sub>=a, x<sub>2</sub>=-1/a</div>
+    </div> 
 {% endblock %}
