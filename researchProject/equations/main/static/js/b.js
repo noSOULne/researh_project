@@ -58,7 +58,7 @@ $('#button').click(function(ev) {
         $('#solution').html('<div>' + a + 'x<sup>2</sup> = ' + c);
     }
     
-    if(answ > 0 || typeof(answ) == 'string')
+    if((c/a > 0 && typeof(answ) == 'string') || answ > 0)
     {
         $('#solution').append('</div><div>x<sup>2</sup> = ' + answ +
         '</div><div>x<sub>1,2</sub> = ±' + sq(answ) + '</div>');
