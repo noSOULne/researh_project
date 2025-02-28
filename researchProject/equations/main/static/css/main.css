@@ -28,7 +28,7 @@ header span {
     border: 10px solid rgb(0, 0, 0);
     border-radius: 10px;
     justify-content: center;
-    aling-items: center;
+    align-items: center;
     background-color: aliceblue;
     margin: 2px 15px;
 }
